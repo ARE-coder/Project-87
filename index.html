@@ -3,7 +3,8 @@
     <title> Master Rangers ( Project 87 ) </title>
     </head>
     <body onload="intro()">
-        <img src="power-rangers-title.png" id="a" class="MR">
+      <center>
+        <img src="power-rangers-title.png" id="areeb">
         <img id="Yellow" class="MR" src="yr.png"> &nbsp; <button id="Hid" onclick="hide1()"> Hide </button> <br>
         <img id="Purple" class="MR" src="pr.png"> &nbsp; <button id="Hid" onclick="hide2()"> Hide </button> <br>
         <img id="Blue" class="MR" src="br.png"> &nbsp; <button id="Hid" onclick="hide3()"> Hide </button> <br>
@@ -13,6 +14,7 @@
         <br>
         <br>
         <button id="Hid" onclick="hide()"> Hide </button>
+        </center>
           </body>
           <style> 
          body{
@@ -32,6 +34,11 @@
          h1{
              text-align: center;
          }
+         #areeb{
+           display: none;
+           height: 300;
+           width: 300px;
+         }
         
         </style>
         <script>
@@ -44,6 +51,7 @@
           {
               document.getElementById("Red").style.display = "block";
               console.log(" r | for Red Ranger: active ");
+              document.getElementsById("areeb").style.display = "block"
           }
           if(keyPressed == '71')
           {
@@ -65,10 +73,7 @@
               document.getElementById("Blue").style.display = "block";
               console.log(" b | for Blue Ranger: active ");
           }
-          if(keyPressed == '97')
-          {
-              document.getElementsById("a").style.display = "block"
-          }
+          
 
           
       }
