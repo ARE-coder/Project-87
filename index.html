@@ -1,8 +1,9 @@
 <html> 
-    <head> <i> <b> <u> Master Rangers </u></b></i>
+    <head> <h1> <i> <b> <u> Master Rangers </u></b></i> </h1>
     <title> Master Rangers ( Project 87 ) </title>
     </head>
-    <body>
+    <body onload="intro()">
+        <img src="power-rangers-title.png" id="a" class="MR">
         <img id="Yellow" class="MR" src="yr.png"> &nbsp; <button id="Hid" onclick="hide1()"> Hide </button> <br>
         <img id="Purple" class="MR" src="pr.png"> &nbsp; <button id="Hid" onclick="hide2()"> Hide </button> <br>
         <img id="Blue" class="MR" src="br.png"> &nbsp; <button id="Hid" onclick="hide3()"> Hide </button> <br>
@@ -28,6 +29,9 @@
              height:300px;
              width:150px;
          }
+         h1{
+             text-align: center;
+         }
         
         </style>
         <script>
@@ -39,30 +43,71 @@
           if(keyPressed == '82')
           {
               document.getElementById("Red").style.display = "block";
-              console.log(" r | for Red Ranger active ");
+              console.log(" r | for Red Ranger: active ");
           }
           if(keyPressed == '71')
           {
               document.getElementById("Green").style.display = "block";
-              console.log(" g | for Green Ranger active ");
+              console.log(" g | for Green Ranger: active ");
           }
           if(keyPressed == '89')
           {
               document.getElementById("Yellow").style.display = "block";
-              console.log(" y | for  Yellow Ranger active ");
+              console.log(" y | for Yellow Ranger: active")
           }
           if(keyPressed == '80')
           {
               document.getElementById("Purple").style.display = "block";
-              console.log(" p | for Purple Ranger active ");
+              console.log(" p | for Purple Ranger: active ");
           }
           if(keyPressed == '66')
           {
               document.getElementById("Blue").style.display = "block";
-              console.log(" b | for Blue Ranger active ");
+              console.log(" b | for Blue Ranger: active ");
+          }
+          if(keyPressed == '97')
+          {
+              document.getElementsById("a").style.display = "block"
           }
 
           
+      }
+      function hide1()
+      {
+        document.getElementById("Yellow").style.display = "none";
+        console.log(" hide | for Yellow Ranger: unactive ");
+      }
+      function hide2()
+      {
+        document.getElementById("Purple").style.display = "none";
+        console.log(" hide | for Purple Ranger: unactive ");
+      }
+      function hide3()
+      {
+        document.getElementById("Blue").style.display = "none";
+        console.log(" hide | for Blue Ranger: unactive ");
+      }
+     function hide4()
+      {
+        document.getElementById("Red").style.display = "none";
+        console.log(" hide | for Red Ranger: unactive ");
+      }
+      function hide5()
+      {
+        document.getElementById("Green").style.display = "none";
+        console.log(" hide | for Green Ranger: unactive ");
+      }
+      function hide()
+      {
+        document.getElementById("Yellow").style.display = "none";
+        document.getElementById("Blue").style.display = "none";
+        document.getElementById("Red").style.display = "none";
+        document.getElementById("Green").style.display = "none";
+        document.getElementById("Purple").style.display = "none";
+        console.log(" hide | for All Ranger: unactive ");
+      }
+      function intro(){
+          window.alert("Welcome to Power Rangers\ press a,r,b,y,g,p to show title \n and power rangers picture and under each picture is a button to hide one ranger \n  and at the very end is a button to hide all the rangers \n\n enjoy !! 😊");
       }
 
         </script>
