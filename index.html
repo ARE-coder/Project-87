@@ -1,0 +1,69 @@
+<html> 
+    <head> <i> <b> <u> Master Rangers </u></b></i>
+    <title> Master Rangers ( Project 87 ) </title>
+    </head>
+    <body>
+        <img id="Yellow" class="MR" src="yr.png"> &nbsp; <button id="Hid" onclick="hide1()"> Hide </button> <br>
+        <img id="Purple" class="MR" src="pr.png"> &nbsp; <button id="Hid" onclick="hide2()"> Hide </button> <br>
+        <img id="Blue" class="MR" src="br.png"> &nbsp; <button id="Hid" onclick="hide3()"> Hide </button> <br>
+        <img id="Red" class="MR" src="rr1.png"> &nbsp; <button id="Hid" onclick="hide4()"> Hide </button> <br>
+        <img id="Green" class="MR" src="gr.png"> &nbsp; <button id="Hid" onclick="hide5()"> Hide </button> <br>
+        <br>
+        <br>
+        <br>
+        <button id="Hid" onclick="hide()"> Hide </button>
+          </body>
+          <style> 
+         body{
+             background-image: url("backg.jpg");
+             background-position: center;
+             background-size: cover;
+             font-size: 18px;
+             font-family: cursive;
+             color: red;
+             
+         }
+         .MR{
+             display:none;
+             height:300px;
+             width:150px;
+         }
+        
+        </style>
+        <script>
+      window.addEventListener("keydown",my_keydown);
+      function my_keydown(e)
+      {
+          keyPressed = e.keyCode;
+          console.log(keyPressed)
+          if(keyPressed == '82')
+          {
+              document.getElementById("Red").style.display = "block";
+              console.log(" r | for Red Ranger active ");
+          }
+          if(keyPressed == '71')
+          {
+              document.getElementById("Green").style.display = "block";
+              console.log(" g | for Green Ranger active ");
+          }
+          if(keyPressed == '89')
+          {
+              document.getElementById("Yellow").style.display = "block";
+              console.log(" y | for  Yellow Ranger active ");
+          }
+          if(keyPressed == '80')
+          {
+              document.getElementById("Purple").style.display = "block";
+              console.log(" p | for Purple Ranger active ");
+          }
+          if(keyPressed == '66')
+          {
+              document.getElementById("Blue").style.display = "block";
+              console.log(" b | for Blue Ranger active ");
+          }
+
+          
+      }
+
+        </script>
+</html>
